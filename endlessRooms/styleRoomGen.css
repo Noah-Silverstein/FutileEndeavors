@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: courier new
+}
+canvas{
+    
+
+}
+
+#interface {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+#doorOpened {
+    padding: 10 0 10 0;
+}
+
+#thoughtsForward, #thoughtsBack{
+    margin: 10px;
+}
+
+#buttonRestart{
+    text-align: center
+}

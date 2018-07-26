@@ -1,0 +1,32 @@
+*{
+    font-family: courier new;
+    margin: 0 0 ;
+    padding: 0 0;
+}
+
+header{
+    background: black;
+    color: white;
+    padding: 10px 0 10px 10px;
+}
+
+canvas{
+    position: absolute;
+    left: 10px;
+    
+}
+
+#gameArea{
+}
+
+#canvasChar{
+    z-index: 3;
+}
+
+#canvasTerrain{
+    z-index: 2;
+}
+
+#canvasBackground{
+    z-index: 1
+}

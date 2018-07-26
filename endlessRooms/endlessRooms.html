@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Things I make cause of boredom">
+    <meta name="author" content="Noah Silverstein">
+    <link rel="icon" href="">
+
+    <title>Futile Endeavors</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/bootstrap.css" rel="stylesheet">
+
+    
+
+    <!-- Custom styles for this template -->
+    <link href="styleRoomGen.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body onload="startMap()">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Futile Endeavors</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="../index.html">Home</a></li>
+            <li><a href="endlessRooms.html">Endless Rooms</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        
+        <div id="interface" >
+        
+        <p id ='thoughtsBack'></p>    
+        <p id ='doorOpened'>You are standing in front of an old redwood door</p>
+        <p id ='thoughtsForward' ></p>
+        
+            
+        <p id="roomButtons">
+            <button type="button" class="btn btn-default btn-sm" onclick="roomGenerator()" id='buttonDoor'> Open the Door </button>
+            <button type="button" class="btn btn-default btn-sm" onclick="reverse()" id='buttonReverse'> Go Back </button>
+
+        </p>
+            <canvas id="map" ></canvas>
+        
+        <p> You've explored <span id="uniqueRooms">0</span> rooms</p>
+        <p>Your most succesful self explored <span id="highscore">0</span> rooms</p>    
+        <p>
+            <button type="button" class="btn btn-default btn-sm" style ="display:none " onclick="restart()" id='buttonRestart'> Reincarnate </button>
+        </p>
+        </div>
+       </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../bootstrap/bootstrap.min.js"></script>  
+      
+    <!-- Endless Rooms java
+    ================================================== -->
+    <script src="roomGenerator.js"></script>  
+    
+  </body>
+</html>
